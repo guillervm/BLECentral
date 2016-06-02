@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="72dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:id="@+id/layout">
+
+    <ImageView
+        android:id="@+id/icon_left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/ic_phone_android_grey600" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/icon_left"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/device_name"
+            android:textSize="16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black87" />
+
+        <TextView
+            android:id="@+id/device_address"
+            android:textSize="14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black54" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_right"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/ic_available_grey" />
+
+</RelativeLayout>
